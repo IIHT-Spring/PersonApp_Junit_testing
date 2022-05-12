@@ -7,6 +7,9 @@ import javax.persistence.Id;
 public class Person {
 	@Id
 	private Integer personId;
+	public Person() {
+		super();
+	}
 	private String personName;
 	public Integer getPersonId() {
 		return personId;
