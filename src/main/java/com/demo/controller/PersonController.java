@@ -1,11 +1,11 @@
-package com.test.controller;
+package com.demo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.test.services.PersonService;
+import com.demo.services.PersonService;
 
 @RestController
 public class PersonController {
