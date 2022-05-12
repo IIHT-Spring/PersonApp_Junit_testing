@@ -27,5 +27,15 @@ class TestingDemoAppApplicationTests {
 	// if both are same then we will pass the test case
 		
 	}
+	
+	@Test 
+	void testProduct() {
+		int actualResult = c.doProduct(2, 11);
+		
+		int expectedResult = 22;
+		assertThat(actualResult).isEqualTo(expectedResult);
+				
+		
+	}
 
 }
