@@ -2,6 +2,8 @@ package com.demo.repo;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -25,6 +27,17 @@ public class PersonRepoTest {
 	assertThat(actualResult).isTrue();
 		
 		
+	}
+	
+	@AfterEach
+	void tearDown() {
+		System.out.println("Tearing down");
+		personRepo.deleteAll();
+	}
+	
+	@BeforeEach
+	void setUp() {
+		System.out.println("setting up!");
 	}
 
 }
